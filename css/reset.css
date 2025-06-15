@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Funnel Display Variable';
+  src: url('../assets/fonts/FunnelDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 800; /* Variable font weight range */
+  font-style: normal;
+}
+
 /* Reset & Base Styles */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -11,7 +18,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Funnel Display Variable', sans-serif;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
