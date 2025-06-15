@@ -1,0 +1,169 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-16);
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-16);
+}
+
+.section-title {
+  margin-bottom: var(--space-8);
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--space-32);
+}
+
+.hero-title {
+  font-size: 5.6rem;
+  margin-bottom: var(--space-16);
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  margin-bottom: var(--space-24);
+}
+
+.feature-title {
+  font-size: 2rem;
+  margin-bottom: var(--space-8);
+}
+
+.feature-desc {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.product-title {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-8);
+}
+
+.product-desc {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-16);
+}
+
+.quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: var(--space-16);
+}
+
+.author-name {
+  font-weight: var(--font-weight-medium);
+  font-size: 1.6rem;
+  margin-bottom: var(--space-4);
+}
+
+.author-title {
+  font-size: 1.4rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0;
+}
+
+.plan-name {
+  font-size: 2.4rem;
+  margin-bottom: var(--space-8);
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.billing-period {
+  font-size: 1.6rem;
+  color: var(--color-text-tertiary);
+}
+
+.plan-description {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-16);
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: var(--space-16);
+}
+
+.footer-tagline {
+  font-size: 1.6rem;
+  margin-bottom: var(--space-16);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1, .hero-title {
+    font-size: 3.6rem;
+  }
+
+  h2, .section-title {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .price {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, .hero-title {
+    font-size: 3.2rem;
+  }
+
+  h2, .section-title {
+    font-size: 2.4rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.6rem;
+  }
+}

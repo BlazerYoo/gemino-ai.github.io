@@ -1,0 +1,150 @@
+/* Variables */
+:root {
+  /* Color System */
+  --color-primary-50: #E6F0FF;
+  --color-primary-100: #CCE0FF;
+  --color-primary-200: #99C2FF;
+  --color-primary-300: #66A3FF;
+  --color-primary-400: #3385FF;
+  --color-primary-500: #0066FF; /* Primary */
+  --color-primary-600: #0052CC;
+  --color-primary-700: #003D99;
+  --color-primary-800: #002966;
+  --color-primary-900: #001433;
+
+  --color-secondary-50: #E6F9FF;
+  --color-secondary-100: #CCF3FF;
+  --color-secondary-200: #99E7FF;
+  --color-secondary-300: #66DBFF;
+  --color-secondary-400: #33CFFF;
+  --color-secondary-500: #00C2FF; /* Secondary */
+  --color-secondary-600: #009BCC;
+  --color-secondary-700: #007499;
+  --color-secondary-800: #004D66;
+  --color-secondary-900: #002733;
+
+  --color-accent-50: #FFECE6;
+  --color-accent-100: #FFD9CC;
+  --color-accent-200: #FFB399;
+  --color-accent-300: #FF8C66;
+  --color-accent-400: #FF6633;
+  --color-accent-500: #FF3D00; /* Accent */
+  --color-accent-600: #CC3100;
+  --color-accent-700: #992500;
+  --color-accent-800: #661800;
+  --color-accent-900: #330C00;
+
+  --color-success-50: #E6F9EF;
+  --color-success-100: #CCF3DF;
+  --color-success-200: #99E7BF;
+  --color-success-300: #66DBA0;
+  --color-success-400: #33CF80;
+  --color-success-500: #00C853; /* Success */
+  --color-success-600: #00A042;
+  --color-success-700: #007832;
+  --color-success-800: #005021;
+  --color-success-900: #002811;
+
+  --color-warning-50: #FFFCE6;
+  --color-warning-100: #FFF9CC;
+  --color-warning-200: #FFF399;
+  --color-warning-300: #FFEC66;
+  --color-warning-400: #FFE633;
+  --color-warning-500: #FFD600; /* Warning */
+  --color-warning-600: #CCAB00;
+  --color-warning-700: #998000;
+  --color-warning-800: #665600;
+  --color-warning-900: #332B00;
+
+  --color-error-50: #FFECE6;
+  --color-error-100: #FFD9CC;
+  --color-error-200: #FFB399;
+  --color-error-300: #FF8C66;
+  --color-error-400: #FF6633;
+  --color-error-500: #FF3D00; /* Error */
+  --color-error-600: #CC3100;
+  --color-error-700: #992500;
+  --color-error-800: #661800;
+  --color-error-900: #330C00;
+
+  /* Neutral Colors */
+  --color-neutral-50: #F9FAFB;
+  --color-neutral-100: #F3F4F6;
+  --color-neutral-200: #E5E7EB;
+  --color-neutral-300: #D1D5DB;
+  --color-neutral-400: #9CA3AF;
+  --color-neutral-500: #6B7280;
+  --color-neutral-600: #4B5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1F2937;
+  --color-neutral-900: #111827;
+
+  /* Light Theme */
+  --color-background: var(--color-neutral-50);
+  --color-surface: #FFFFFF;
+  --color-surface-rgb: 255, 255, 255;
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-tertiary: var(--color-neutral-500);
+  --color-border: var(--color-neutral-200);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --space-2: 0.2rem;
+  --space-4: 0.4rem;
+  --space-8: 0.8rem;
+  --space-12: 1.2rem;
+  --space-16: 1.6rem;
+  --space-24: 2.4rem;
+  --space-32: 3.2rem;
+  --space-48: 4.8rem;
+  --space-64: 6.4rem;
+  --space-80: 8rem;
+  --space-96: 9.6rem;
+  --space-128: 12.8rem;
+
+  /* Typography */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Border radius */
+  --radius-sm: 0.4rem;
+  --radius-md: 0.8rem;
+  --radius-lg: 1.6rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.02);
+
+  /* Container */
+  --container-width: 120rem;
+  --container-padding: var(--space-24);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --color-background: var(--color-neutral-900);
+  --color-surface: var(--color-neutral-800);
+  --color-surface-rgb: 31, 41, 55;
+  --color-text-primary: var(--color-neutral-50);
+  --color-text-secondary: var(--color-neutral-300);
+  --color-text-tertiary: var(--color-neutral-400);
+  --color-border: var(--color-neutral-700);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: var(--space-16);
+  }
+}

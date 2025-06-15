@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina | Smart Living Simplified</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/utilities.css">
+  </head>
+  <body>
+    <div class="theme-container" data-theme="light">
+      <header class="site-header" id="header">
+        <div class="container">
+          <div class="logo">
+            <a href="#" aria-label="Lumina homepage">
+              <span class="logo-text">Lumina</span>
+            </a>
+          </div>
+          <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+              <span class="menu-icon"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact" class="btn btn-outline">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon"></span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="container">
+            <div class="hero-content fade-in">
+              <h1 class="hero-title">Smart Living Simplified</h1>
+              <p class="hero-subtitle">Seamlessly control your entire home with elegance and ease.</p>
+              <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">Discover Products</a>
+                <a href="#demo" class="btn btn-secondary">Watch Demo</a>
+              </div>
+            </div>
+            <div class="hero-image fade-in">
+              <div class="device-mockup">
+                <!-- Placeholder for hero image -->
+                <div class="device-screen"></div>
+                <div class="device-notch"></div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+          </div>
+        </section>
+
+        <section class="features" id="features">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Why Choose Lumina</h2>
+              <p class="section-subtitle">Designed with simplicity and elegance at its core</p>
+            </div>
+
+            <div class="features-grid">
+              <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                  <div class="icon-circle" data-icon="light"></div>
+                </div>
+                <h3 class="feature-title">Smart Lighting</h3>
+                <p class="feature-desc">Adjust brightness, color, and mood with simple gestures or voice commands.</p>
+              </div>
+
+              <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                  <div class="icon-circle" data-icon="security"></div>
+                </div>
+                <h3 class="feature-title">Enhanced Security</h3>
+                <p class="feature-desc">Monitor and protect your home with integrated cameras and sensors.</p>
+              </div>
+
+              <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                  <div class="icon-circle" data-icon="climate"></div>
+                </div>
+                <h3 class="feature-title">Climate Control</h3>
+                <p class="feature-desc">Perfect temperature and air quality, managed automatically for efficiency.</p>
+              </div>
+
+              <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                  <div class="icon-circle" data-icon="voice"></div>
+                </div>
+                <h3 class="feature-title">Voice Assistant</h3>
+                <p class="feature-desc">Natural language control for your entire home ecosystem.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-showcase" id="products">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Our Products</h2>
+              <p class="section-subtitle">Beautifully designed devices for every home</p>
+            </div>
+
+            <div class="product-slider" id="productSlider">
+              <div class="product-slide active">
+                <div class="product-image">
+                  <div class="product-device product-hub"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lumina Hub</h3>
+                  <p class="product-desc">The central command for your smart home, elegantly designed to blend with any decor.</p>
+                  <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+              </div>
+
+              <div class="product-slide">
+                <div class="product-image">
+                  <div class="product-device product-light"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lumina Light</h3>
+                  <p class="product-desc">Smart lighting that adapts to your activities and mood throughout the day.</p>
+                  <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+              </div>
+
+              <div class="product-slide">
+                <div class="product-image">
+                  <div class="product-device product-sensor"></div>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lumina Sensor</h3>
+                  <p class="product-desc">Discreet sensors that monitor temperature, air quality, and movement.</p>
+                  <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-controls">
+              <button class="slider-arrow prev" id="prevSlide" aria-label="Previous product"></button>
+              <div class="slider-dots" id="sliderDots">
+                <button class="dot active" aria-label="Product 1"></button>
+                <button class="dot" aria-label="Product 2"></button>
+                <button class="dot" aria-label="Product 3"></button>
+              </div>
+              <button class="slider-arrow next" id="nextSlide" aria-label="Next product"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo-section" id="demo">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">See Lumina in Action</h2>
+              <p class="section-subtitle">Experience the simplicity of smart living</p>
+            </div>
+
+            <div class="video-container" data-aos="fade-up">
+              <div class="video-placeholder">
+                <button class="play-button" id="playDemo" aria-label="Play demo video">
+                  <span class="play-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">What Our Users Say</h2>
+              <p class="section-subtitle">Join thousands of satisfied customers</p>
+            </div>
+
+            <div class="testimonial-carousel" id="testimonialCarousel">
+              <div class="testimonial active">
+                <div class="testimonial-content">
+                  <p class="quote">"Lumina has transformed our home. The lighting adapts perfectly to our daily routines, and the security features give us peace of mind."</p>
+                  <div class="testimonial-author">
+                    <p class="author-name">Sarah Johnson</p>
+                    <p class="author-title">Homeowner</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <p class="quote">"The interface is intuitive and elegant. I was able to set up the entire system in under an hour, and it works flawlessly."</p>
+                  <div class="testimonial-author">
+                    <p class="author-name">David Chen</p>
+                    <p class="author-title">Tech Enthusiast</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <p class="quote">"As an interior designer, I appreciate how the Lumina devices blend seamlessly with any decor. They're as beautiful as they are functional."</p>
+                  <div class="testimonial-author">
+                    <p class="author-name">Emma Rodriguez</p>
+                    <p class="author-title">Interior Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicators" id="testimonialIndicators">
+              <button class="indicator active" aria-label="Testimonial 1"></button>
+              <button class="indicator" aria-label="Testimonial 2"></button>
+              <button class="indicator" aria-label="Testimonial 3"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Choose Your Plan</h2>
+              <p class="section-subtitle">Flexible options for every home</p>
+            </div>
+
+            <div class="pricing-toggle">
+              <span class="toggle-label">Monthly</span>
+              <label class="switch">
+                <input type="checkbox" id="billingToggle">
+                <span class="slider round"></span>
+              </label>
+              <span class="toggle-label">Annual <span class="discount">Save 20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                  <h3 class="plan-name">Starter</h3>
+                  <div class="plan-price">
+                    <span class="price monthly">$29</span>
+                    <span class="price annual">$23</span>
+                    <span class="billing-period">/month</span>
+                  </div>
+                  <p class="plan-description">Perfect for small apartments</p>
+                </div>
+                <ul class="plan-features">
+                  <li>Lumina Hub + 2 Smart Lights</li>
+                  <li>Basic voice commands</li>
+                  <li>Mobile app control</li>
+                  <li>1-year warranty</li>
+                </ul>
+                <a href="#" class="btn btn-outline btn-full">Get Started</a>
+              </div>
+
+              <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-header">
+                  <h3 class="plan-name">Premium</h3>
+                  <div class="plan-price">
+                    <span class="price monthly">$59</span>
+                    <span class="price annual">$47</span>
+                    <span class="billing-period">/month</span>
+                  </div>
+                  <p class="plan-description">Ideal for most homes</p>
+                </div>
+                <ul class="plan-features">
+                  <li>Lumina Hub + 5 Smart Lights</li>
+                  <li>2 Security Sensors</li>
+                  <li>Advanced voice control</li>
+                  <li>Scene customization</li>
+                  <li>2-year warranty</li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-full">Get Started</a>
+              </div>
+
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="pricing-header">
+                  <h3 class="plan-name">Ultimate</h3>
+                  <div class="plan-price">
+                    <span class="price monthly">$99</span>
+                    <span class="price annual">$79</span>
+                    <span class="billing-period">/month</span>
+                  </div>
+                  <p class="plan-description">For larger homes</p>
+                </div>
+                <ul class="plan-features">
+                  <li>Lumina Hub + 10 Smart Lights</li>
+                  <li>4 Security Sensors + Camera</li>
+                  <li>Climate Control Integration</li>
+                  <li>Premium support</li>
+                  <li>3-year warranty</li>
+                </ul>
+                <a href="#" class="btn btn-outline btn-full">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter" id="contact">
+          <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+              <div class="newsletter-content">
+                <h2 class="section-title">Stay Updated</h2>
+                <p>Join our newsletter to receive updates on new products, features, and exclusive offers.</p>
+              </div>
+              <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group">
+                  <input type="email" id="emailInput" placeholder="Your email address" required>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+                <div class="form-message" id="formMessage"></div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <div class="footer-logo">
+                <span class="logo-text">Lumina</span>
+              </div>
+              <p class="footer-tagline">Smart Living Simplified</p>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"><span class="social-icon facebook"></span></a>
+                <a href="#" aria-label="Twitter"><span class="social-icon twitter"></span></a>
+                <a href="#" aria-label="Instagram"><span class="social-icon instagram"></span></a>
+                <a href="#" aria-label="LinkedIn"><span class="social-icon linkedin"></span></a>
+              </div>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Products</h3>
+              <ul class="footer-links">
+                <li><a href="#">Lumina Hub</a></li>
+                <li><a href="#">Smart Lights</a></li>
+                <li><a href="#">Sensors</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Company</h3>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Support</h3>
+              <ul class="footer-links">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Lumina. All rights reserved.</p>
+            <div class="language-selector">
+              <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
